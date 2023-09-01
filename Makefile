@@ -56,7 +56,7 @@ lint: lint-steps lint-composite
 ROOTDIR?=	/usr
 
 TOOLSDIR?=	${ROOTDIR}/tools
-TOOLSBRANCH?=	master
+TOOLSBRANCH?=	main
 
 .if defined(CONFIGDIR)
 _CONFIGDIR=	${CONFIGDIR}
@@ -76,7 +76,7 @@ _CONFIGDIR=	${DIR:C/\/build\.conf$//}
 
 # Bootstrap the build options if not set:
 
-NAME?=		OPNsense
+NAME?=		Veritawall
 TYPE?=		${NAME:tl}
 SUFFIX?=	# empty
 _ARCH!=		uname -p
@@ -89,13 +89,13 @@ DEVICE?=	A10
 COMSPEED?=	115200
 UEFI?=		arm dvd serial vga vm
 ZFS?=		# empty
-GITBASE?=	https://github.com/opnsense
-MIRRORS?=	https://opnsense.c0urier.net \
-		https://mirrors.nycbug.org/pub/opnsense \
-		https://mirror.wdc1.us.leaseweb.net/opnsense \
-		https://mirror.sfo12.us.leaseweb.net/opnsense \
-		https://mirror.fra10.de.leaseweb.net/opnsense \
-		https://mirror.ams1.nl.leaseweb.net/opnsense
+GITBASE?=	https://github.com/vw-fw
+MIRRORS?=	no #https://opnsense.c0urier.net \
+		#https://mirrors.nycbug.org/pub/opnsense \
+		#https://mirror.wdc1.us.leaseweb.net/opnsense \
+		#https://mirror.sfo12.us.leaseweb.net/opnsense \
+		#https://mirror.fra10.de.leaseweb.net/opnsense \
+		#https://mirror.ams1.nl.leaseweb.net/opnsense
 SERVER?=	user@does.not.exist
 UPLOADDIR?=	.
 _VERSION!=	date '+%Y%m%d%H%M'
@@ -104,16 +104,16 @@ STAGEDIRPREFIX?=/usr/obj
 
 EXTRABRANCH?=	# empty
 
-COREBRANCH?=	stable/${ABI}
+COREBRANCH?=	main
 COREVERSION?=	# empty
 COREDIR?=	${ROOTDIR}/core
 COREENV?=	CORE_PHP=${PHP} CORE_ABI=${ABI} CORE_PYTHON=${PYTHON}
 
-PLUGINSBRANCH?=	stable/${ABI}
+PLUGINSBRANCH?=	main
 PLUGINSDIR?=	${ROOTDIR}/plugins
 PLUGINSENV?=	PLUGIN_PHP=${PHP} PLUGIN_ABI=${ABI} PLUGIN_PYTHON=${PYTHON}
 
-PORTSBRANCH?=	master
+PORTSBRANCH?=	main
 PORTSDIR?=	${ROOTDIR}/ports
 PORTSENV?=	# empty
 
@@ -121,7 +121,7 @@ PORTSREFURL?=	https://git.FreeBSD.org/ports.git
 PORTSREFDIR?=	${ROOTDIR}/freebsd-ports
 PORTSREFBRANCH?=main
 
-SRCBRANCH?=	stable/${ABI}
+SRCBRANCH?=	main
 SRCDIR?=	${ROOTDIR}/src
 
 # A couple of meta-targets for easy use and ordering:
