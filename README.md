@@ -2,7 +2,7 @@ About the Veritawall tools
 ========================
 
 In conjunction with src.git, ports.git, core.git and plugins.git they
-create sets, packages and images for the OPNsense project.
+create sets, packages and images for the Veritawall project.
 
 Setting up a build system
 =========================
