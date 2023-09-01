@@ -1,4 +1,4 @@
-About the OPNsense tools
+About the Veritawall tools
 ========================
 
 In conjunction with src.git, ports.git, core.git and plugins.git they
@@ -15,18 +15,18 @@ All tasks require a root user.  Do the following to grab the repositories
 
     # pkg install git
     # cd /usr
-    # git clone https://github.com/opnsense/tools
+    # git clone https://github.com/veritawall/tools
     # cd tools
     # make update
 
-Note that the OPNsense repositories can also be setup in a non-/usr directory
+Note that the Veritawall repositories can also be setup in a non-/usr directory
 by setting ROOTDIR.  For example:
 
-    # mkdir -p /tmp/opnsense
-    # cd /tmp/opnsense
-    # git clone https://github.com/opnsense/tools
+    # mkdir -p /tmp/veritawall
+    # cd /tmp/veritawall
+    # git clone https://github.com/veritawall/tools
     # cd tools
-    # env ROOTDIR=/tmp/opnsense make update
+    # env ROOTDIR=/tmp/veritawall make update
 
 TL;DR
 =====
@@ -69,7 +69,7 @@ Available build options are:
 * DEVICE:	loads device-specific modifications, e.g. "A10" (default)
 * KERNEL:	the kernel config to use, e.g. SMP (default)
 * MIRRORS:	a list of mirrors to prefetch sets from
-* NAME:		"OPNsense" (default)
+* NAME:		"Veritawall" (default)
 * PRIVKEY:	the private key for signing sets
 * PUBKEY:	the public key for signing sets
 * SUFFIX:	the suffix of top package name (default is empty)
