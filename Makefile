@@ -57,7 +57,6 @@ ROOTDIR?=	/usr
 
 TOOLSDIR?=	${ROOTDIR}/tools
 TOOLSBRANCH?=	main
-SETTINGS?= 1.9
 
 .if defined(CONFIGDIR)
 _CONFIGDIR=	${CONFIGDIR}
@@ -82,7 +81,7 @@ TYPE?=		${NAME:tl}
 SUFFIX?=	# empty
 _ARCH!=		uname -p
 ARCH?=		${_ARCH}
-ABI?=		main
+ABI?=		${_CONFIGDIR:C/^.*\///}
 KERNEL?=	SMP
 ADDITIONS?=	# empty
 DEBUG?=		# empty
