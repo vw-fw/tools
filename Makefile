@@ -57,6 +57,7 @@ ROOTDIR?=	/usr
 
 TOOLSDIR?=	${ROOTDIR}/tools
 TOOLSBRANCH?=	main
+SETTINGS?= 1.9
 
 .if defined(CONFIGDIR)
 _CONFIGDIR=	${CONFIGDIR}
