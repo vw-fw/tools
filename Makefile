@@ -76,47 +76,7 @@ _CONFIGDIR=	${DIR:C/\/build\.conf$//}
 
 # Bootstrap the build options if not set:
 
-NAME?=		Veritawall
-PUBKEY?=\
------BEGIN PUBLIC KEY-----\n\
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4vZ5BI/r93Kuhmehz9//\n\
-2LCiFUNw7HFN3q9BlDaUHvf0dCC0MIWCHT+OuCdM1+odHhk7BMmCQacIApa+7RA4\n\
-qMmNQ3cjput5KSrF/DnyFiHGadbRFb2K/KlSljsB4Ky1X7qicmsQEuGHgceatw7Z\n\
-u8mDsp5Zz+xRrQVfPHBQeBq4TGeENVqp2oKPIbtnd1TKZOGhGpEMT5KxXx0IUl8N\n\
-1H9ywiaL0r3saUBLYUEmpBnd0B1xetFpn9FpLT9B85uW0yWWkiUO9Kt0Q2+6MD82\n\
-RJjgBGaB3scXhW/WUCMU4UF/VL5D03AVnfi8ctJmODp9vmU97UTFEA+kHbvZZbcG\n\
-+QIDAQAB\n\
------END PUBLIC KEY-----\n\
-
-PRIVKEY?=\
------BEGIN RSA PRIVATE KEY-----\n\
-MIIEpAIBAAKCAQEA4vZ5BI/r93Kuhmehz9//2LCiFUNw7HFN3q9BlDaUHvf0dCC0\n\
-MIWCHT+OuCdM1+odHhk7BMmCQacIApa+7RA4qMmNQ3cjput5KSrF/DnyFiHGadbR\n\
-Fb2K/KlSljsB4Ky1X7qicmsQEuGHgceatw7Zu8mDsp5Zz+xRrQVfPHBQeBq4TGeE\n\
-NVqp2oKPIbtnd1TKZOGhGpEMT5KxXx0IUl8N1H9ywiaL0r3saUBLYUEmpBnd0B1x\n\
-etFpn9FpLT9B85uW0yWWkiUO9Kt0Q2+6MD82RJjgBGaB3scXhW/WUCMU4UF/VL5D\n\
-03AVnfi8ctJmODp9vmU97UTFEA+kHbvZZbcG+QIDAQABAoIBAQDU9+Jm3YXWE86g\n\
-X+3+WXqBonz05uu3cjpXkqw+n1guFw1TSrzKKv0E5PbO5lG86PmZnKM8wrlvUYS6\n\
-qSlO2cHQ4A+mFs1le9+dOX2+R8FZ8ydzeReJBuq8W0YbohMI+AbZZQ+5vay/itDU\n\
-frA2xcCZ7WWe3ef4qw+ZA0lyNRHNH8D8dGc6KYeH4GR4oDb9pTIC3ZuifqbJGw/t\n\
-8J/1zmXjpc/jWmT6YbUsZFfObkcNDrlp8Tk7f94CqKJJkxFs/48kSk7Arv8zZdmC\n\
-v7hYLQvJfz8avDyLkqG+j8BSRzZHm1CMU8vkZm1Fg82NmfWL8XMECWPfq71B0V4g\n\
-vY+s3YQBAoGBAPc04X/5mpI5nqQOcqauNTmH+mXvk6QNMSbvXwALLxhfbM9nCwRf\n\
-WuysJ2/ZdlWcLTJ35HDeW9yAIwP+2GoihyVauNte7UhfiKfK2FhIgI/JcCZXhb6u\n\
-FhMzHois2uCJDEod2imBg+waHqJO/lVmvSHOqJmdOVVBT5oHpKZKwC1xAoGBAOsJ\n\
-P1UQ0dXy+4MQ3eswcezyBNf9wUG6kFO/s1FI5IMeotvMscpvupZxSw+a0PRrCx1W\n\
-g2NVuBWWvrn2IXXfVFWc87qWke1nY9Gp8PRfR6zyq7yZA/d6By7Pqe1Zt7vb+yj+\n\
-ZB5ZTl2eKCbKC6snLrOqv4GbRxhdOdym+f2+bU4JAoGBAIWORVJNuQvNI39A6wJQ\n\
-ViMZ6tdNwzc7hVWit3GfmTcSvweihRo8pjP9omTUWRFRij2c9odgKsMLW1+aPLPC\n\
-qb8tr3edZpbWPk9g0NeJfCOy0et1F6X4Cacf1BxFPw9WG5SjYi1QcsSJLAnGobPk\n\
-CMSOERrFDaeY3He8L2FEO2WRAoGAPVYxd/KmwC3kI0UwlOMUqCBU0UVAvPWCGskJ\n\
-c+oQ8IL7P19A+rKDwCUa0Jy3cUHKKcLdEPxayQ+JAKDSBJ/es2T9WjFXLdxweVPf\n\
-NPb0jpbZ6KMKHPh0jWvWTcG/KEB1YDJbUGw//kB6+/x4ZRcZofuqdJlgSWRy6DmP\n\
-PgAHKHkCgYAVqDIxT7H260snwSbeyvbj8Z7T7ELm25qqWj5e1y+w2OQV5V6GuBke\n\
-rrnia6U9s9Rb6o+uNbxryxRxrMF7AcfL63ZRruHnMrnx7XG3C6L851km8ky1UXTy\n\
-plzPDIEUTbo0O8PqBZMPH4wCdz52RA2L0QsFAV3fy4eJ7N1pPAPXNA==\n\
------END RSA PRIVATE KEY-----\n\
-
+NAME?=		Muro
 TYPE?=		${NAME:tl}
 SUFFIX?=	# empty
 _ARCH!=		uname -p
@@ -130,12 +90,7 @@ COMSPEED?=	115200
 UEFI?=		arm dvd serial vga vm
 ZFS?=		# empty
 GITBASE?=	https://github.com/vw-fw
-MIRRORS?=	no #https://opnsense.c0urier.net \
-		#https://mirrors.nycbug.org/pub/opnsense \
-		#https://mirror.wdc1.us.leaseweb.net/opnsense \
-		#https://mirror.sfo12.us.leaseweb.net/opnsense \
-		#https://mirror.fra10.de.leaseweb.net/opnsense \
-		#https://mirror.ams1.nl.leaseweb.net/opnsense
+MIRRORS?=	no 
 SERVER?=	user@does.not.exist
 UPLOADDIR?=	.
 _VERSION!=	date '+%Y%m%d%H%M'
